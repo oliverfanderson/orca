@@ -1,0 +1,25 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build ORCA",
+			"type": "shell",
+			"command": "g++",
+			"args": [
+				"-O2",
+				"-std=c++11",
+				"-o",
+				"orca",
+				"orca.cpp"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"detail": "Build ORCA project"
+		}
+	]
+}
